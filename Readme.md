@@ -14,9 +14,9 @@ The trie shows words like allot, alone, ant, and, are, bat, bad. The idea is tha
 
 
 # Time Complexities
-> Insert : O(m)    : m is the length of string. 
-> Delete : O(m)    : m is the length of string. 
-> Search : O(m)    : m is the length of string. 
+> Insert : O(m)    : m is the length of string. <br>
+> Delete : O(m)    : m is the length of string. <br>
+> Search : O(m)    : m is the length of string. <br>
 >
 > Space Complexity : O(n*m)     :  n = number of string , m = avg length of strings
 
