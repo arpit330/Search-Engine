@@ -94,32 +94,33 @@ int main(int argc, char **argv)
         {
         case 1:
             cout << "\n";
+            cout << "Results for Exact Search : \n\n";
             if (T.exact_search(pattern))
             {
                 cout << filename << " Exists.\n ";
             }
             else
             {
-                cout << filename << " NOT Found.\n";
+                cout << "NOT Found.\n";
             }
             break;
         case 2:
             cout << "\n";
-
+            cout << "Results for Prefix Search : \n\n";
             for (string w : T.prefix_search(pattern))
             {
-                int flag = 1;
+                flag = 1;
                 cout << w << "\n";
             }
             if (!flag)
             {
-                cout << filename << " NOT Found.\n";
+                cout << "NOT Found.\n";
             }
             break;
 
         case 3:
             cout << "\n";
-
+            cout << "Results for Universal Search : \n\n";
             for (string w : Patter_search(data, pattern))
             {
                 flag = 1;
@@ -127,7 +128,7 @@ int main(int argc, char **argv)
             }
             if (!flag)
             {
-                cout << filename << " NOT Found.\n";
+                cout << "NOT Found.\n";
             }
             break;
 
